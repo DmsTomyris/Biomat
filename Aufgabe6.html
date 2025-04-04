@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biomat</title>
+
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zur CSS-Datei -->
+
+    
+
+    <script>
+
+        let A = 7; // Initialisiere die Zählvariable
+
+        let P = 0; // Initialisiere die Variable P
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        P = parseInt(urlParams.get('P'));
+
+        console.log(P); // Gibt "Wert1" aus
+
+
+        function increaseP1() {
+
+            P += 10; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP2() {
+
+            P += 7; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP3() {
+
+            P += 3; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP4() {
+
+            P += 0; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+
+
+        function goToNextPage() {
+
+            const nextPage = "Aufgabe" + A + ".html?P=" + P; // Erstelle die URL für die nächste Seite
+
+            window.location.href = nextPage; // Leite zur nächsten Seite weiter
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Biomat</h1>
+
+    <div id="question-container">
+
+        <p id="question">6. Wie gut bist du in Chemie?</p>
+
+        <button onclick="increaseP1(); goToNextPage()">Sehr gut</button>
+
+        <button onclick="increaseP2(); goToNextPage()">Gut</button>
+
+        <button onclick="increaseP3(); goToNextPage()">Eher meh</button>
+
+        <button onclick="increaseP4(); goToNextPage()">Beschissen</button>
+
+    </div>
+
+</body>
+
+</html>

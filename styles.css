@@ -1,0 +1,66 @@
+/* Grundlegende Stile für den Body */
+
+body {
+
+    font-family: Arial, sans-serif; /* Schriftart */
+
+    background-color: #f4f4f4; /* Hintergrundfarbe */
+
+    color: #333; /* Textfarbe */
+
+    text-align: center; /* Zentriert den Text */
+
+    padding: 20px; /* Innenabstand */
+
+}
+
+
+/* Stil für die Frage */
+
+#question {
+
+    font-size: 24px; /* Schriftgröße der Frage */
+
+    margin-bottom: 20px; /* Abstand unter der Frage */
+
+}
+
+
+/* Stil für die Antwortbuttons */
+
+button {
+
+    background-color: #4CAF50; /* Grüner Hintergrund */
+
+    color: white; /* Weiße Schriftfarbe */
+
+    border: none; /* Keine Rahmen */
+
+    padding: 15px 30px; /* Innenabstand */
+
+    text-align: center; /* Zentriert den Text im Button */
+
+    text-decoration: none; /* Keine Unterstreichung */
+
+    display: inline-block; /* Inline-Block für die Buttons */
+
+    font-size: 18px; /* Schriftgröße der Buttons */
+
+    margin: 10px; /* Abstand zwischen den Buttons */
+
+    cursor: pointer; /* Zeiger-Cursor beim Hover */
+
+    border-radius: 5px; /* Abgerundete Ecken */
+
+    transition: background-color 0.3s; /* Übergangseffekt */
+
+}
+
+
+/* Hover-Effekt für die Buttons */
+
+button:hover {
+
+    background-color: #45a049; /* Dunklerer Grünton beim Hover */
+
+}

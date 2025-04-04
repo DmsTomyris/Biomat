@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biomat</title>
+
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zur CSS-Datei -->
+
+    
+
+    <script>
+
+        let A = 8; // Initialisiere die Zählvariable
+
+        let P = 0; // Initialisiere die Variable P
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        P = parseInt(urlParams.get('P'));
+
+        console.log(P); // Gibt "Wert1" aus
+
+
+        function increaseP1() {
+
+            P += 10; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP2() {
+
+            P += 7; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP3() {
+
+            P += 3; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP4() {
+
+            P += 0; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+
+
+        function goToNextPage() {
+
+            const nextPage = "Aufgabe" + A + ".html?P=" + P; // Erstelle die URL für die nächste Seite
+
+            window.location.href = nextPage; // Leite zur nächsten Seite weiter
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Biomat</h1>
+
+    <div id="question-container">
+
+        <p id="question">7. Kannst du Abbildungen und Diagramme interpretieren?
+        </p>
+
+        <button onclick="increaseP1(); goToNextPage()">Ja! Das mach ich gerne!</button>
+
+        <button onclick="increaseP2(); goToNextPage()">Kann ich ganz gut</button>
+
+        <button onclick="increaseP3(); goToNextPage()">Kann ich mit leben</button>
+
+        <button onclick="increaseP4(); goToNextPage()">Kein Bock drauf</button>
+
+    </div>
+
+</body>
+
+</html>

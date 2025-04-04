@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biomat</title>
+
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkung zur CSS-Datei -->
+
+    
+
+    <script>
+
+        let A = 2; // Initialisiere die Zählvariable
+
+        let P = 0; // Initialisiere die Variable P
+
+
+
+        function increaseP1() {
+
+            P += 10; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP2() {
+
+            P += 7; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP3() {
+
+            P += 3; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+        function increaseP4() {
+
+            P += 0; // Erhöhe P um 10
+
+            console.log("Der Wert von P ist jetzt: " + P); // Ausgabe des neuen Wertes von P
+
+        }
+
+
+        function goToNextPage() {
+
+            const nextPage = "Aufgabe" + A + ".html?P=" + P; // Erstelle die URL für die nächste Seite
+
+            window.location.href = nextPage; // Leite zur nächsten Seite weiter
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Biomat</h1>
+
+    <div id="question-container">
+
+        <p id="question">1. Interessierst du dich für biologische Prozesse in Pflanzen, Tieren und Menschen?</p>
+
+        <button onclick="increaseP1(); goToNextPage()">Ja! Sehr!</button>
+
+        <button onclick="increaseP2(); goToNextPage()">Ist ganz okay</button>
+
+        <button onclick="increaseP3(); goToNextPage()">Eher nicht</button>
+
+        <button onclick="increaseP4(); goToNextPage()">Garnicht</button>
+
+    </div>
+
+</body>
+
+</html>
